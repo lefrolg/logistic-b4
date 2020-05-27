@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./datetimepicker-master/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <title>Major</title>
+  </head>
+  <body>
+        <header class="navbar-dark">
+            <div class="nav_bg">
+                <div class="container1800">
+                    <nav class="navbar navbar-expand-lg  mynavbar">
+                        <a class="navbar-brand mybrand" href="/">
+                            <img src="./img/Logo.png" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>       
+                        <ul class="navbar-nav mr-auto collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-white m-2 h5" href="#">Вызвать курьера</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-white m-2 h5" href="#">Рассчитать стоимость</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-white m-2 h5" href="#">Отслеживание груза</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase text-white m-2 h5" href="#">Контакты</a>
+                            </li>
+                            
+                            <li class="nav-item dropdown mydropdown m-2 text-break mybreak text-white ">
+                                <a class="nav-link dropdown-toggle text-white text-break" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Выбор региона, город, телефон, название города, регион и т.д.
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-lg-right mydropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item mydropdowna" href="#">Мурманск</a>
+                                    <a class="dropdown-item mydropdowna" href="#">Новосибирск</a>
+                                    <a class="dropdown-item mydropdowna" href="#">Екатеринбург</a>
+                                    <a class="dropdown-item mydropdowna" href="#">Самара</a>
+                                    <a class="dropdown-item mydropdowna" href="#">Челябинск</a>
+                                    <a class="dropdown-item mydropdowna" href="#">Омск</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- contaner1800 -->
+            </div>
+            <!-- nav_bg -->
+            <section class="header_section ">
+                    <div class="container1800 pt-xl-5 pb-xl-5 pt-2 pb-2">
+                        <div class="row mt-xl-5 mb-xl-5 m-md-1 flex-wrap no-gutters">
+                            <div class="col p-md-2 p-1 partners d-none d-lg-block">
+                                <p class="h1 text-uppercase text-white mt-md-4 mb-md-5 mt-1 mb-1" >Компании, доверяющие нам свои грузы:</p>
+                                <div class="row flex-row flex-wrap justify-content-between align-items-center mb-5">
+                                    <div class="col-4 pt-3 pb-2 pr-5" ><img src="./img/sever.png" alt=""></div> 
+                                    <div class="col-4 pt-3 pb-2 pr-5"><img src="./img/derussa.png" alt=""></div> 
+                                    <div class="col-3 pt-3 pb-2 pr-5"><img src="./img/leroy.png" alt=""></div> 
+                                    <div class="w-100"></div>
+                                    <div class="col-4 pt-3 pb-2 pr-5"><img src="./img/invitro.png" alt=""></div> 
+                                    <div class="col-4 pt-3 pb-2 pr-5"><img src="./img/bisquite.png" alt=""></div> 
+                                    <div class="col-3 pt-3 pb-2 pr-5"><img src="./img/ultra.png" alt="" ></div> 
+                                </div>
+                            </div>
+                            <div class="p-md-2 mt-5 mb-5 ml-auto header_button_block">
+                                <div class="calculate pt-md-4 pb-md-4 pr-md-3 pl-md-3 pt-3 pb-3 pr-3 pl-3">
+                                    <a href="/" class="text-uppercase pr-5 pl-5 pb-3 pt-3 m-3 text-center text-decoration-none" >Рассчитать стоимость</a>
+                                    <a href="/"  class="text-uppercase pr-5 pl-5 pb-3 pt-3 m-3 text-center text-decoration-none">Вызвать курьера</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Button trigger modal -->
+                        <div class="row align-items-center my_row ml-2 d-none d-lg-inline">
+                            <button type="button" class="mymodalbutton " data-toggle="modal" data-target="#exampleModalCenter">
+                                <img src="./img/small-play.png" width="50px" alt="">
+                            </button>
+                            <span class="pl-3 m-0 text-white h5">Наше официальное видео</span>
+                        </div>
+
+    
+                        <!-- Modal -->
+                        <div class="modal fade mymodal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <iframe src="https://www.youtube.com/embed/_FiO0ZqZ8zg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                    </div>
+                    <!-- container1800 -->
+            </section>
+        </header>
+
+        <section class="calculate_block pt-5 pb-3">
+            <div class="container1400 mt-md-5 pt-md-5 pl-1 pr-1">
+                <h1 class="text-uppercase text-white text-center font-weight-normal">Блок рассчета стоимости</h1>
+                <h2 class="text-white text-center font-weight-normal h4 pt-2 pb-4">Усли у вас есть договор с Major Express воспользуйтесь личным кабинетом</h2>
+                <div class="row no-gutters mt-5 justify-content-between flex-wrap flex-sm-column flex-column flex-md-row">
+                    <div class="col-md-6 col-12 pl-2 pr-2 mt-3 pl-md-2 pr-md-2 pl-lg-5 pr-lg-5">
+                        <div class="orange_block text-white font-weight-normal h3 pt-3 pb-3 pl-5">Откуда забрать?</div>  
+                        <form action="">
+                            <div class="form-group row mt-2 mt-sm-5 no-gutters ">
+                                <label for="ofcountry" class="col-sm-2 col-form-label text-white ">Страна</label>
+                                <div class="col-sm-10 select_arrow">
+                                        <select class="form-control" id="ofcountry">
+                                            <option>Россия</option>
+                                            <option>Украина</option>
+                                            <option>Белорусь</option>
+                                        </select> 
+                                </div>
+                            </div>
+                            <div class="form-group row mt-2 mt-sm-5 no-gutters">
+                                <label for="ofcity" class="col-sm-2 col-form-label text-white ">Город</label>
+                                <div class="col-sm-10  select_arrow">
+                                    <select class="form-control" id="ofcity">
+                                        <option>Москва</option>
+                                        <option>Киев</option>
+                                        <option>Минск</option>
+                                    </select> 
+                                </div>
+                            </div>
+                            <div class="form-group row no-gutters mt-2 mt-sm-5 align-items-center ">
+                                <label for="data_del" class="col-sm-3 col-form-label text-white ">Дата отправки</label>
+                                <div class="col-sm-9 calendar">
+                                    <img src="./img/calendar.png" width="50px" alt="" class="pr-2"> 
+                                    <input id="datetimepicker" type="text" value="01-01-2019 12:00" >
+                                    <!-- <input type="datetime-local" id="datetimepicker" > -->
+                                </div>
+                            </div>
+                            
+
+                        </form>
+                    </div>
+                    
+                    <div class="col-md-6 col-12  pl-2 pr-2 mt-3 pl-md-2 pr-md-2 pl-lg-5 pr-lg-5">
+                        <div class="orange_block text-white font-weight-normal h3 pt-3 pb-3 pl-5">Куда привезти?</div>  
+                        <form action="">
+                            <div class="form-group row mt-2 mt-sm-5 no-gutters ">
+                                <label for="atcountry" class="col-sm-2 col-form-label text-white ">Страна</label>
+                                <div class="col-sm-10  select_arrow">
+                                    <select class="form-control" id="atcountry">
+                                        <option>Россия</option>
+                                        <option>Украина</option>
+                                        <option>Белорусь</option>
+                                    </select> 
+                                </div>
+                            </div>
+                            <div class="form-group row mt-2 mt-sm-5 no-gutters ">
+                                <label for="atcity" class="col-sm-2 col-form-label text-white ">Город</label>
+                                <div class="col-sm-10  select_arrow">
+                                    <select class="form-control" id="atcity">
+                                        <option>Москва</option>
+                                        <option>Киев</option>
+                                        <option>Минск</option>
+                                    </select> 
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- container -->
+        </section>
+
+        <section class="type_cargo pt-4 pb-4" >
+            <div class="container1400 mt-md-4 mb-md-4 mt-2 mb-2">
+
+                    <form action="" class="pl-2 pr-2 pl-md-2 pr-md-2 pl-lg-5 pr-lg-5">
+                        <div class="form-group row no-gutters ">
+                            <label for="type_cargo" class="col-sm-2 col-form-label text-white ">Тип груза</label>
+                            <div class="col-sm-4 select_arrow">
+                                
+                                    <select class="form-control" id="type_cargo">
+                                        <option>Документы</option>
+                                        <option>Стекло</option>
+                                        <option>Стройматериалы</option>
+                                    </select> 
+                                
+                            </div>
+                        </div>
+                        <div class="form-group row mt-2 mt-sm-5 no-gutters ">
+                            <label for="massa_cargo" class="col-sm-2 col-form-label text-white ">Вес груза</label>
+                            <div class="col-sm-10">
+                            <input type="number" placeholder="0.0" id="massa_cargo" class="p-1">
+                            </div>
+                        </div>
+                        <div class="form-group row mt-2 mt-sm-5 no-gutters">
+                            <label for="gabarits_1" class="col-sm-2 col-form-label text-white ">Габариты</label>
+                            <div class="col-sm-10">
+                            <input type="number" placeholder="Длина (см)" id="gabarits_1" class="p-1 m-1">
+                            <input type="number" placeholder="Ширина (см)" id="gabarits_2" class="p-1 m-1">
+                            <input type="number" placeholder="Высота (см)" id="gabarits_3" class="p-1 m-1">
+                            </div>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="customFile">
+                            <label class="my_files_add" for="customFile">
+                                <img src="./img/plus.png" alt="" width="50px">  <span>Добавть груз/документ</span>   
+                            </label>
+                        </div>
+
+                    </form>
+            </div>
+            <!-- container1400 -->
+        </section>
+
+        <section class="adress">
+            <div class="container1400">
+                <div class="mybuttons justify-content-center row no-gutters">
+                    <a href="/" class="text-uppercase pr-5 pl-5 pb-3 pt-3 m-3 m-md-5 text-center text-decoration-none">Сделать заказ</a>
+                    <a href="/" class="text-uppercase pr-5 pl-5 pb-3 pt-3 m-3 m-md-5 text-center text-decoration-none">Рассчитать</a>
+                </div>
+                <div class="row no-gutters justify-content-between flex-column flex-md-row">
+                    <div class="col-md-4 col-12 ">
+                        <div class="cart_pd p-3">
+                            <a href="/" class="card_a text-decoration-none">
+                                <div class="card p-4 my_card">
+                                <img src="./img/geo-location.png" class="my_card_img m-auto" alt="...">
+                                <div class="card-body  pl-0 pr-0">
+                                <h5 class="card-title text-white text-center h3 font-weight-normal">Отправить из офиса</h5>
+                                <p class="card-text text-white text-center mt-4 h4 font-weight-normal">Цена: <span class="h2 pl-3" >1500р.</span> </p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 ">
+                        <div class="cart_pd p-3">
+                            <a href="/" class="card_a text-decoration-none ">
+                                <div class="card p-4 my_card">
+                                <img src="./img/desktop.png" class="my_card_img m-auto" alt="...">
+                                <div class="card-body  pl-0 pr-0">
+                                <h5 class="card-title text-white text-center h3 font-weight-normal">Вызвать курьера онлайн</h5>
+                                <p class="card-text text-white text-center mt-4 h4 font-weight-normal">Цена: <span class="h2 pl-3" >1500р.</span> </p>
+                                </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 ">
+                        <div class="cart_pd p-3">
+                            <a href="tel:+38000000000" class="card_a text-decoration-none">
+                                <div class="card p-4 my_card">
+                                    <img src="./img/phone.png" class="my_card_img m-auto" alt="...">
+                                    <div class="card-body pl-0 pr-0">
+                                    <h5 class="card-title text-white text-center h3 font-weight-normal">Вызвать курьера по телефону</h5>
+                                    <p class="card-text text-white text-center mt-4 h4 font-weight-normal">Цена: <span class="h2 pl-3" >1500р.</span> </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row no-gutters pl-3 pr-4 mt-5">
+                    <div class="col-md-4 col-12 button_office p-4">
+                        <button class="pt-3 pb-3 mb-4 mt-4 mr-auto ml-auto text-white text-center">Отделение №1</button>
+                        <button class="pt-3 pb-3 mb-4 mt-4 mr-auto ml-auto text-white text-center">Отделение №2</button>
+                        <p class="text-white">ул. Барклая, 12/12, Москва, 121309</p>
+                        <p class="text-white">Пн-Вск 10:00-21:00</p>
+                        <a href="tel:84957375223" class="text-white" class="text-decoration-none">8(495)737-52-23</a>
+                        <p class="text-white pt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore deserunt corporis deleniti dolorum tenetur omnis blanditiis molestias rem et molestiae? Quibusdam odio iste, tempore in debitis vel ut fuga qui!</p>
+                    </div>
+                    <div class="col-md-8 col-12">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.7894620830352!2d37.496511416046154!3d55.744787000077444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54950986756d7%3A0x44a1773a382faac4!2z0YPQuy4g0JHQsNGA0LrQu9Cw0Y8sIDEyLzEyLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTIxMzA5!5e0!3m2!1sru!2sua!4v1589715837164!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+
+                </div>
+
+                <nav aria-label="breadcrumb ">
+                    <ol class="breadcrumb mybreadcrumb pl-3 pr-4 pt-5 mytext-orange ">
+                      <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-white">Введите адрес</a></li>
+                      <li class="breadcrumb-item" active aria-current="page" > Укажите контактные данные</li>
+                      <li class="breadcrumb-item"><a href="#" class="text-decoration-none text-white">Укажите детали </a></li>
+                    </ol>
+                </nav>
+                <div class="row justify-content-between no-gutters flex-wrap flex-sm-column flex-column flex-md-row adress_form pb-md-5 pb-2 mt-md-5 mt-2 ">
+                    <div class="col-md-6 col-12 pl-2 pr-2 mt-3 pl-md-2 pr-md-2 pl-lg-5 pr-lg-5">
+                        <div class="orange_block text-white font-weight-normal h3 pt-3 pb-3 pl-5 mb-2 mb-md-5">Адрес отправителя</div>  
+                        <form action="">
+                            <div class="form-group row mt-2 mt-sm-4 no-gutters">
+                                <label for="ofcountry_1" class="col-sm-2 col-form-label text-white ">Страна</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="p-1" id="ofcountry_1">
+                                </div>
+                            </div>
+                            <div class="form-group row mt-2 mt-sm-4 no-gutters">
+                                <label for="ofcity_1" class="col-sm-2 col-form-label text-white ">Город</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="p-1" id="ofcity_1">
+                                </div>
+                            </div>
+                            <div class="form-group row mt-2 mt-sm-4 no-gutters">
+                                <label for="ofadress_1" class="col-sm-2 col-form-label text-white ">Адрес</label>
+                                <div class="col-sm-10">
+                                    <input type="text" placeholder="Улица, дом, офис, квартира" class="p-1" id="ofadress_1">
+                                </div>
+                            </div>
+                         
+                            
+
+                        </form>
+                    </div>
+                    
+                    <div class="col-md-6 col-12 pl-2 pr-2 mt-3 pl-md-2 pr-md-2 pl-lg-5 pr-lg-5">
+                        <div class="orange_block text-white font-weight-normal h3 pt-3 pb-3 pl-5 mb-2 mb-md-5">Адрес получателя</div>  
+                        <form action="">
+                            <div class="form-group row mt-2 mt-sm-4 no-gutters">
+                                <label for="atcountry_1" class="col-sm-2 col-form-label text-white ">Страна</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="p-1" id="atcountry_1">
+                                </div>
+                            </div>
+                            <div class="form-group row mt-2 mt-sm-4 no-gutters">
+                                <label for="atcity_1" class="col-sm-2 col-form-label text-white ">Город</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="p-1" id="atcity_1">
+                                </div>
+                            </div>
+                            <div class="form-group row mt-2 mt-sm-4 no-gutters">
+                                <label for="atadress_1" class="col-sm-2 col-form-label text-white ">Адрес</label>
+                                <div class="col-sm-10">
+                                    <input type="text" placeholder="Улица, дом, офис, квартира" class="p-1" id="atadress_1">
+                                </div>
+                            </div>
+                         
+                            
+
+                        </form>
+                    </div>
+
+            </div>
+        </section>
+
+        <section class="names pt-4 pb-4">
+            <div class="container1400">
+                <div class="row justify-content-between no-gutters flex-wrap flex-sm-column flex-column flex-md-row adress_form mt-2 mt-md-5 ">
+                    <div class="col-md-6 col-12 pl-2 pr-2 mt-3 pl-md-2 pr-md-2 pl-lg-5 pr-lg-5">
+                        <div class="orange_block text-white font-weight-normal h3 pt-3 pb-3 pl-5 mb-3 mb-md-5">Отправитель</div>  
+                        <form action="">
+                            <div class="form-group row mt-2 mt-sm-4 no-gutters">
+                                <label for="ofname" class="col-sm-3 col-form-label text-white ">Имя, фамилия</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="p-1" id="ofname">
+                                </div>
+                            </div>
+                            <div class="form-group row mt-2 mt-sm-4 no-gutters">
+                                <label for="ofnamefirm" class="col-sm-3 col-form-label text-white ">Название фирмы</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="p-1" id="ofnamefirm">
+                                </div>
+                            </div>
+                            <div class="form-group row mt-2 mt-sm-4 no-gutters">
+                                <label for="oftel" class="col-sm-3 col-form-label text-white ">телефон</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="p-1" id="oftel">
+                                </div>
+                            </div>
+                         
+                            
+
+                        </form>
+                    </div>
+                    
+                    <div class="col-md-6 col-12 pl-2 pr-2 mt-3 pl-md-2 pr-md-2 pl-lg-5 pr-lg-5">
+                        <div class="orange_block text-white font-weight-normal h3 pt-3 pb-3 pl-5 mb-md-5 md-2">Получатель</div>  
+                        <form action="">
+                            <div class="form-group row mt-2 mt-sm-4 no-gutters">
+                                <label for="atname" class="col-sm-3 col-form-label text-white ">Имя, фамилия</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="p-1" id="atname">
+                                </div>
+                            </div>
+                            <div class="form-group row mt-2 mt-sm-4 no-gutters">
+                                <label for="atnamefirm" class="col-sm-3 col-form-label text-white ">Название фирмы</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="p-1" id="atnamefirm">
+                                </div>
+                            </div>
+                            <div class="form-group row mt-2 mt-sm-4 no-gutters">
+                                <label for="attel" class="col-sm-3 col-form-label text-white ">телефон</label>
+                                <div class="col-sm-9">
+                                    <input type="text" class="p-1" id="attel">
+                                </div>
+                            </div>
+                         
+                            
+
+                        </form>
+                    </div>
+            </div>
+
+        </section>
+
+        <section class="info_order pt-md-5 pb-md-5 pt-3 pb-5">
+            <div class="container1400">
+                <div class="row no-gutters flex-wrap flex-sm-column flex-column flex-md-row ">
+                    <div class="col-md-6 col-12 p-md-4 pt-md-4 pr-md-4 pl-md-4 p-2">
+                        <div class="info_oder_block p-4 m-4">
+                            <p  class="text-white">Дата отправки</p>
+                            <p class="mytext-orange h5 font-weight-normal  mb-0">10 янавря с 09:00 до 22:00</p>
+                        </div>
+                        <div class="info_oder_block p-4 m-4">
+                            <p  class="text-white">Забрать из России, Москва</p>
+                            <p class="text-white  mb-0">Привезти в Россию, Санкт-петербург</p>
+                        </div>
+                        <div class="info_oder_block p-4 m-4">
+                            <p  class="text-white">Предпологаемая дата доставки</p>
+                            <p class="mytext-orange h5 font-weight-normal  mb-0">12 января с 09:00 до 22:00</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 p-md-4 pt-md-4 pr-md-4 pl-md-4 p-2">
+                        <div class="info_oder_block p-4 m-4">
+                            <p  class="text-white">Документ, 1,5кг </p>
+                            <p class="text-white mb-0">10х10х8</p>
+                        </div>
+                        <div class="info_oder_block p-4 m-4">
+                            <p  class="text-white">Отправить из офиса</p>
+                            <p class="text-white  mb-0">Отделение №1</p>
+                        </div>
+                        <div class="info_oder_block p-4 m-4">
+                            <p  class="text-white">Получатель - Россия, Москва, адрес</p>
+                            <p class="text-white mb-0">Имя фамилия, Телефон, Email</p>
+                        </div>
+                        <div class="info_oder_block p-4 m-4">
+                            <p  class="text-white">Стоимость доставки <span class="mytext-orange h5 font-weight-normal">3200р</span> </p>
+                            <p class="text-white custom-control custom-checkbox  mb-0">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1">Я подтверждаю согласие с <a href="/" class="mytext-orange">условиями текст</a></label> 
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ml-4 pl-4 addorder_services">
+                    <a href="/" class="mytext-orange"><img src="./img/plus.png" alt="" width="50px" class="pr-3">Оформить доп.услуги</a>
+                </div>
+                <div class="row no-gutters order_services m-md-5 p-3 m-4 align-items-center flex-wrap flex-sm-column flex-column flex-md-row">
+                    <div class="col p-2">
+                        
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2"> <span class="pl-2 mytext-orange h3 font-weight-normal">Доставка в руки</span></label> 
+                        </div>
+                        
+                    </div>
+                    <div class="col p-2">
+                        <p class="text-white">Описание услуги, текст, описание</p>
+                        <p class="text-white">Описание услуги, текст, описание</p>
+                    </div>
+                    <div class="col p-2">
+                        <p class="text-white">Стоимость услуги</p>
+                        <p class="mytext-orange h4 font-weight-normal">600р</p>
+                    </div>
+                </div>
+                <div class="row no-gutters order_services m-md-5 p-3 m-4m-md-5 p-3 m-4 align-items-center flex-wrap flex-sm-column flex-column flex-md-row">
+                    <div class="col p-2">
+                        
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3"> <span class="pl-2 mytext-orange h3 font-weight-normal">Доп услуга</span></label> 
+                        </div>
+                        
+                    </div>
+                    <div class="col p-2">
+                        <p class="text-white">Описание услуги, текст, описание</p>
+                        <p class="text-white">Описание услуги, текст, описание</p>
+                    </div>
+                    <div class="col p-2">
+                        <p class="text-white">Стоимость услуги</p>
+                        <p class="mytext-orange h4 font-weight-normal">600р</p>
+                    </div>
+                </div>
+                <div class="mybuttons justify-content-center row no-gutters">
+                    <a href="/" class="text-uppercase pr-5 pl-5 pb-3 pt-3 text-decoration-none">Вызвать курьера</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="reg_promo p-4">
+            <div class="container1400">
+                <h2 class="text-uppercase text-white text-center">Региональное промо</h2>
+                <div class="row no-gutters justify-content-center align-items-center pt-4 pb-4 flex-wrap flex-sm-column flex-column flex-md-row">
+                    <div class="col-md-3 col-12">
+                        <div class="text-center">
+                        <img src="./img/bell.png" alt="" class="m-auto">
+                        </div>
+                        <p class="text-white text-center pr-5 pl-5  pt-3 pb-3">Бесплатное уведомление о доставке</p>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <div class="text-center">
+                        <img src="./img/shield.png" alt="" class="m-auto">
+                        </div>
+                        <p class="text-white text-center pr-5 pl-5 pt-3 pb-3">Страxование всех грузов по умолчанию</p>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <div class="text-center">
+                        <img src="./img/house2.png" alt="" class="m-auto">
+                        </div>
+                        <p class="text-white text-center pt-3 pb-3">Пункт выдачи заказов интернет магазинов (OZON, My-Shop)</p>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-md-3 col-12">
+                        <div class="text-center">
+                        <img src="./img/fedex.png" alt="" class="m-auto">
+                        </div>
+                        <p class="text-white text-center pt-3 pb-3">Международные отправления по линии FedEx Express</p>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <div class="text-center">
+                        <img src="./img/clock.png" alt="" class="m-auto">
+                        </div>
+                        <p class="text-white text-center pr-5 pl-5 pt-3 pb-3">Срок доставки по Роcсии - от 1 дня</p>
+                    </div>
+                </div>
+             
+            </div>
+        </section>
+
+        <section class="footer_map">
+            
+                <div class="row no-gutters align-items-center flex-wrap flex-sm-column flex-column flex-md-row">
+                    <div class="col-0 col-xl-1"></div>
+                    <div class="col-12 col-lg-4 p-2 p-xl-5">
+                        <div class="p-3">
+                            <a href="tel:+80000000000" class="text-white text-decoration-none"><img src="./img/phone-sm.png" alt="" class="pr-4"> <span>8(495)646-29-49</span></a>
+                        </div>
+                        <div class="p-3">
+                            <a href="mailto:dkjhj@dfd" class="text-white text-decoration-none"><img src="./img/mail.png" alt="" class="pr-4"> <span>major@gmail.com</span> </a>
+                        </div>
+                        <div class="p-3">
+                            <a href="/" class="text-white text-decoration-none"><img src="./img/house.png" alt="" class="pr-4"> <span> ул. Добролюбова, д.2, стр.1, Москва, 121059</span></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8 col-xl-7">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35932.58872430249!2d37.46368082343783!3d55.74483333399608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5495098675437%3A0xfd2fc181bb36cea2!2sMajor%20Express!5e0!3m2!1sru!2sua!4v1589732761908!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            
+           
+        </section>
+
+        <footer>
+            <div class="row no-gutters">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-11 col-12 p-5">
+                    <span class="text-white "> Major Express <br> 2019 </span>
+                </div>
+            </div>
+        </footer>
+
+
+        
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- <script src="./datetimepicker-master/jquery.datetimepicker.js"></script> -->
+    <script src="./datetimepicker-master/build/jquery.datetimepicker.full.min.js"></script>
+    <script src="./bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+    <script src="./date.js"></script>
+    
+
+  </body>
+</html>
